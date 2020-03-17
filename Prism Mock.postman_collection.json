@@ -1,0 +1,175 @@
+{
+	"info": {
+		"_postman_id": "a5f9f93d-c4ea-4138-8943-a6a5fa083e1f",
+		"name": "Prism Mock",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/company-api-entity/profiles/100026",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:8080/company-api-entity/profiles/100026",
+					"protocol": "https",
+					"host": [
+						"company-prism-mock-server",
+						"apps",
+						"stl",
+						"pcfdev00",
+						"mastercard",
+						"int"
+					],
+					"path": [
+						"company-api-entity",
+						"profiles",
+						"100026"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/company-api-entity/profiles",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"companyId\": 100027,\n    \"legalName\": \"Company 100027\"\n}"
+				},
+				"url": {
+					"raw": "https://localhost:8080/company-api-entity/profiles",
+					"protocol": "https",
+					"host": [
+						"company-prism-mock-server",
+						"apps",
+						"stl",
+						"pcfdev00",
+						"mastercard",
+						"int"
+					],
+					"path": [
+						"company-api-entity",
+						"profiles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/company-api-entity/profiles/100028",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:8080/company-api-entity/profiles/100028",
+					"protocol": "https",
+					"host": [
+						"company-prism-mock-server",
+						"apps",
+						"stl",
+						"pcfdev00",
+						"mastercard",
+						"int"
+					],
+					"path": [
+						"company-api-entity",
+						"profiles",
+						"100028"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/company-api-entity/profiles/100028",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"companyId\": 100028,\n    \"legalName\": \"Company 100028 updated\"\n}"
+				},
+				"url": {
+					"raw": "https://localhost:8080/company-api-entity/profiles/100028",
+					"protocol": "https",
+					"host": [
+						"company-prism-mock-server",
+						"apps",
+						"stl",
+						"pcfdev00",
+						"mastercard",
+						"int"
+					],
+					"path": [
+						"company-api-entity",
+						"profiles",
+						"100028"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/company-api-entity/profiles/100028",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "legalName=Company 100028 patched"
+				},
+				"url": {
+					"raw": "https://localhost:8080/company-api-entity/profiles/100028",
+					"protocol": "https",
+					"host": [
+						"company-prism-mock-server",
+						"apps",
+						"stl",
+						"pcfdev00",
+						"mastercard",
+						"int"
+					],
+					"path": [
+						"company-api-entity",
+						"profiles",
+						"100028"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

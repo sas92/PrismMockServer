@@ -1,0 +1,10 @@
+applications:
+- name: employee-prism-mock-server
+  memory: 256M
+  disk_quota: 512M
+  command: npm start
+  buildpack: nodejs_buildpack
+  env:
+    PRISM_PORT: 4010
+    PORT: 8080
+    API_DOC: employee-doc.json

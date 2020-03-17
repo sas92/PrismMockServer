@@ -1,0 +1,40 @@
+#!groovy
+
+pipeline {
+    agent any
+    
+    tools {nodejs "NodeJS"}
+
+    stages {
+        stage('Configure NodeJS and Git') {
+            steps {
+                bat 'npm config set registry https://registry.npmjs.org/'
+                bat 'npm config set strict-ssl false'
+            }
+        }
+
+        stage('Cloning from Git') {
+            steps {
+                git 'https://github.com/sas92/PrismMockServer'
+            }
+        }
+
+        stage('Install Prism NPM Module Globally') {
+            steps {
+                bat 'npm install -g @stoplight/prism-cli'
+            }
+        }
+
+        stage('Install NPM Dependencies') {
+            steps {
+                bat 'npm install'
+            }
+        }
+
+        stage('Start Prism Server') {
+            steps {
+                bat 'npm start'
+            }
+        }
+    }
+}
