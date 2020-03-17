@@ -5,7 +5,7 @@
     "main": "index.js",
     "author": "Saswata Adhya",
     "scripts": {
-        "preinstall": "npm config set registry https://registry.npmjs.org/ && npm config set strict-ssl false",
+        "preinstall": "npm config set registry https://registry.npmjs.org/ && npm config set strict-ssl false && npm install -g @stoplight/prism-cli",
         "start": "node index.js"
     },
     "dependencies": {

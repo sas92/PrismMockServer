@@ -20,17 +20,17 @@ pipeline {
             }
         }
 
-        stage('Install Prism NPM Module Globally') {
-            steps {
-                bat 'npm install -g @stoplight/prism-cli'
-            }
-        }
+        // stage('Install Prism NPM Module Globally') {
+        //     steps {
+        //         bat 'npm install -g @stoplight/prism-cli'
+        //     }
+        // }
 
-        stage('Install NPM Dependencies') {
-            steps {
-                bat 'npm install'
-            }
-        }
+        // stage('Install NPM Dependencies') {
+        //     steps {
+        //         bat 'npm install'
+        //     }
+        // }
 
         stage('Deploy to PCF') {
             steps {
