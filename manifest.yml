@@ -6,5 +6,4 @@ applications:
   buildpack: nodejs_buildpack
   env:
     PRISM_PORT: 4010
-    PORT: 8080
     API_DOC: employee-doc.json

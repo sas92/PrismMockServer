@@ -2,7 +2,7 @@ const { exec } = require("child_process");
 const EXPRESS = require('express');
 const app = EXPRESS();
 
-const SERVER_PORT = process.env.PORT || 8081;
+const SERVER_PORT = process.env.PORT || 8080;
 const PRISM_PORT = process.env.PRISM_PORT || 4010;
 const LOCALHOST = '127.0.0.1';
 const API_DOC = process.env.API_DOC;

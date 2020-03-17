@@ -32,20 +32,16 @@ pipeline {
             }
         }
 
-        // stage('Start Prism Server') {
-        //     steps {
-        //         bat 'npm start'
-        //     }
-        // }
-
         stage('Deploy to PCF') {
-            pushToCloudFoundry(
-                target: 'api.run.pivotal.io',
-                organization: 'Sastech',
-                cloudSpace: 'development',
-                credentialsId: 'sas_pcf_cred',
-                manifestChoice: [manifestFile: 'manifest.yml']
-            )
+            steps {
+                pushToCloudFoundry(
+                    target: 'api.run.pivotal.io',
+                    organization: 'Sastech',
+                    cloudSpace: 'development',
+                    credentialsId: 'sas_pcf_cred',
+                    manifestChoice: [manifestFile: 'manifest.yml']
+                )
+            }
         }
     }
 }
