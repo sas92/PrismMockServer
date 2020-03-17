@@ -10,6 +10,7 @@ pipeline {
             steps {
                 bat 'npm config set registry https://registry.npmjs.org/'
                 bat 'npm config set strict-ssl false'
+                bat 'git config --global http.sslVerify false'
             }
         }
 
