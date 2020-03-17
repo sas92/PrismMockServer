@@ -8,17 +8,17 @@ pipeline {
     stages {
         stage('Clean Workspace') {
             steps {
-                bat 'dir'
+                sh 'dir'
                 cleanWs()
-                bat 'dir'
+                sh 'dir'
             }
         }
         
         stage('Configure NodeJS and Git') {
             steps {
-                bat 'npm config set registry https://registry.npmjs.org/'
-                bat 'npm config set strict-ssl false'
-                bat 'git config --global http.sslVerify false'
+                sh 'npm config set registry https://registry.npmjs.org/'
+                sh 'npm config set strict-ssl false'
+                sh 'git config --global http.sslVerify false'
             }
         }
 
@@ -30,13 +30,13 @@ pipeline {
 
         // stage('Install Prism NPM Module Globally') {
         //     steps {
-        //         bat 'npm install -g @stoplight/prism-cli'
+        //         sh 'npm install -g @stoplight/prism-cli'
         //     }
         // }
 
         // stage('Install NPM Dependencies') {
         //     steps {
-        //         bat 'npm install'
+        //         sh 'npm install'
         //     }
         // }
 

@@ -59,3 +59,4 @@ Dynamic mocking only works for json responses, so if you want to mock back xml r
 * https://docs.cloudfoundry.org/devguide/deploy-apps/healthchecks.html
 * https://docs.cloudfoundry.org/devguide/deploy-apps/manifest-attributes.html
 * https://github.com/socketstream/prism-client
+* https://jenkins.io/doc/pipeline/steps/cloudfoundry/
