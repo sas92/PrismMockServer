@@ -11,7 +11,7 @@
     "dependencies": {
         "@stoplight/prism-cli": "^3.2.9",
         "express": "^4.17.1",
-        "http-proxy": "^1.18.0"
+        "http-proxy": "^1.18.1"
     },
     "engines": {
         "node": "^12.14.0",
